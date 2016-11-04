@@ -8,8 +8,6 @@ python:
   - DB=mysql57
   - DB=mysql56
 
-install:
-    "pip install ."
 
 script:
   - env | grep DB
