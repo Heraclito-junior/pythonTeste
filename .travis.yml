@@ -2,16 +2,15 @@ language: python
 python:
     - 2.7
     - 2.7.12
+    - 3.3
     
 install:
   - pip install --upgrade pip
-  - git clone git@github.com:mysql/mysql-connector-python.git
-  - cd mysql-connector-python
-  - python setup.py install
 
+
+services:
+  - mysql
 
 script:
-  
-
-  - mysql --version
+  - sudo apt-get install mysql-server
   
