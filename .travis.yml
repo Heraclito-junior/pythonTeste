@@ -7,6 +7,9 @@ install:
   - pip install --upgrade pip
 
 
+services:
+  - mysql
 
 script:
-  - sudo apt-get install mysql-server
+
+  - sudo apt-get update
