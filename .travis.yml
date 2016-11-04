@@ -5,18 +5,9 @@ python:
     
 install:
   - pip install --upgrade pip
-  
-env:
-  - DB=mysql57
-  - DB=mysql56
+  - sudo apt-get install mysql-server
 
-  
 services:
   - mysql
-script:
-  - env | grep DB
-  - bash -c "if [ '$DB' = 'mysql57' ]; then sudo ./scripts/install_mysql57.sh; fi"
-  - bash -c "if [ '$DB' = 'mysql56' ]; then sudo ./scripts/install_mysql56.sh; fi"
-
 
  
