@@ -10,5 +10,7 @@ install:
 
 script:
 
-  mysql --version
+  sudo apt-get remove --purge mysql*
+  sudo apt-get autoremove
+  sudo apt-get autclean
   
