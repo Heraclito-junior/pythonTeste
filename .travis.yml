@@ -5,7 +5,9 @@ python:
     
 install:
   - pip install --upgrade pip
-  - pip install mysql-connector-python
+  - git clone git@github.com:mysql/mysql-connector-python.git
+  - cd mysql-connector-python
+  - python setup.py install
 
 
 script:
