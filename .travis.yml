@@ -4,7 +4,7 @@ python:
     - 2.7
     - 2.7.12
     
-+env:
+env:
   - DB=mysql57
   - DB=mysql56
 
