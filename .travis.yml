@@ -7,7 +7,7 @@ install:
   - pip install --upgrade pip
   
 env:
-  - DB=mysql57
+
   - DB=mysql56
 
   
